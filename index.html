@@ -34,6 +34,7 @@
       font-weight: 700;
       background: linear-gradient(135deg, var(--accent), #06b6d4);
       -webkit-background-clip: text;
+      background-clip: text;
       color: transparent;
       text-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
     }
@@ -65,7 +66,7 @@
       font-weight: 600;
       margin-bottom: 10px;
       font-size: 1.7rem;
-      text-align: left;
+      text-align: center;
     }
 
     p.muted {
@@ -73,6 +74,8 @@
       font-size: 1rem;
       margin-top: 10px;
       max-width: 700px;
+      margin-inline: auto;
+      text-align: center;
     }
 
     .btn {
@@ -98,23 +101,26 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 2rem;
-      margin-top: 2rem;
+      gap: 3rem;
+      margin-top: 2.5rem;
     }
 
     .payments div {
       text-align: center;
-      transition: transform 0.25s ease;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 20px 30px;
+      border-radius: 12px;
     }
 
     .payments div:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
     }
 
     .payments img {
-      width: 60px;
-      height: 60px;
-      border-radius: 12px;
+      width: 70px;
+      height: 70px;
       display: block;
       margin: 0 auto 10px;
     }
@@ -142,20 +148,20 @@
   <section id="about">
     <h2>About Me</h2>
     <p class="muted">
-      I focus entirely on scripting for Roblox. If you need something coded, message me with what you need done and I’ll let you know if I can handle it.
+      I focus entirely on scripting for Roblox. Message me with what you need done and I’ll let you know if I can handle it.
     </p>
   </section>
 
   <section id="payment">
     <h2>Payment</h2>
-    <p class="muted">Accepted methods:</p>
+    <p class="muted">Accepted methods</p>
     <div class="payments">
       <div>
-        <img src="cashapp.png" alt="CashApp Logo">
+        <img src="Cashapp.png" alt="CashApp Logo">
         <span>CashApp</span>
       </div>
       <div>
-        <img src="rubuxs.png" alt="Robux Logo">
+        <img src="Rubux.png" alt="Robux Logo">
         <span>Robux</span>
       </div>
     </div>
